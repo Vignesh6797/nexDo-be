@@ -29,7 +29,7 @@ paths:
         in: body
         description: user Data
         required: true
-        schema:
+        schema: 
           $ref: '#/definitions/users'
       responses:
         201:
@@ -131,7 +131,7 @@ paths:
         500:
           description: 'Server Error'
 
-# [GET] services/name
+# [GET] services/name 
   /services/{name}:
     get:
       tags:
@@ -150,6 +150,10 @@ paths:
           description: 'Conflict'
         500:
           description: 'Server Error'
+
+
+
+
 
 # definitions
 definitions:
